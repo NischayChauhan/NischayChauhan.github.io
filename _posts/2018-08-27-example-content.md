@@ -48,7 +48,7 @@ On solving we will get,
 
 
 # What it might look like
-![Image with caption](../images/blog_1/1.png "Image with caption")
+![Image with caption](../images/bolg_1/1.png "Image with caption")
 _How linear regression with gradient descent algo would find a best fit_
 
 # Hello Python
