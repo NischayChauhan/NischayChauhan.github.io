@@ -34,15 +34,15 @@ Thats what we do in everyday life pretty much.
 ## Math
 The question remains, how should we update the parameters. We know that it has something to do with the error we got but what exactly is it.
 
-The Equation/Hypothesis: ![eq1](https://latex.codecogs.com/gif.latex?h_%7B%5Ctheta%7D%20%3D%20B_%7B0%7D%20&plus;%20%28B_%7B1%7D*x%29).
+The Equation/Hypothesis: ![eq1](https://latex.codecogs.com/gif.latex?h_%7B%5Ctheta%7D%20%3D%20B_%7B0%7D%20&plus;%20%28B_%7B1%7D*x%29)
 
-The Error/Cost function: ![eq2](https://latex.codecogs.com/gif.latex?J_%7B%5Ctheta%7D%20%3D%20%5Csum%7B%20Y_%7Bpredicited%7D%20-%20Y_%7Btrue%7D%7D).
+The Error/Cost function: ![eq2](https://latex.codecogs.com/gif.latex?J_%7B%5Ctheta%7D%20%3D%20%5Csum%7B%20Y_%7Bpredicited%7D%20-%20Y_%7Btrue%7D%7D)
 
 Now, here is the trick the parameters will updated as :-	
-	![eq3](https://latex.codecogs.com/gif.latex?%5Ctheta_%7Bj%7D%20%3D%20%5Ctheta_%7Bj%7D%20-%20%5Calpha*%5Cfrac%7B%5Cpartial%20J_%7B%5Ctheta%7D%7D%7B%5Cpartial%20%5Ctheta_%7Bj%7D%7D).
+	![eq3](https://latex.codecogs.com/gif.latex?%5Ctheta_%7Bj%7D%20%3D%20%5Ctheta_%7Bj%7D%20-%20%5Calpha*%5Cfrac%7B%5Cpartial%20J_%7B%5Ctheta%7D%7D%7B%5Cpartial%20%5Ctheta_%7Bj%7D%7D)
 
 On solving we will get, 
-	![eq4](https://latex.codecogs.com/gif.latex?%5Ctheta_%7Bj%7D%20%3D%20%5Ctheta_%7Bj%7D%20-%20%5Calpha%20*%20%28h%28x%5E%7Bi%7D%29-y%29%20*%20x_%7Bj%7D%5E%7Bi%7D).
+	![eq4](https://latex.codecogs.com/gif.latex?%5Ctheta_%7Bj%7D%20%3D%20%5Ctheta_%7Bj%7D%20-%20%5Calpha%20*%20%28h%28x%5E%7Bi%7D%29-y%29%20*%20x_%7Bj%7D%5E%7Bi%7D)
 
 
 # What it might look like
