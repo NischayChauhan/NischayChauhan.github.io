@@ -18,7 +18,9 @@ Consider a set of points marked on x - axis and y - axis.
 
 Let,there be a point (x<sub>i</sub>,y<sub>i</sub>). The goal is to find a line y = (a*x) + b. Where the (Y<sub>predicted</sub> - Y<sub>actuall</sub>) ~ 0.
 
-For this what we do is that we take a error E, where E = |Y<sub>predicted</sub> - Y<sub>actuall</sub>|, or  E = (Y<sub>predicted</sub> - Y<sub>actuall</sub>)<sup>2</sup>.
+For this what we do is that we take an error E, where 
+E = | Y_predicted - Y_actuall |, or  
+E = (Y_predicted - Y_actuall)<sup>2</sup>.
 
 The motive is to take the magnitude of error without considering the sign.
 
@@ -111,6 +113,6 @@ print "Final values are: ",startDescent(theta0,theta1,x,y)
 
 {% endhighlight %}
 
-###GoodBye
+### GoodBye
 > Work untill your could, would, should become did.
 
