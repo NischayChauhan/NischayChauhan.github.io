@@ -1,19 +1,14 @@
 ---
 layout: post
-title: "Example Content"
+title: "Linear Regression"
 author: "NC"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt ornare nibh, non elementum augue tempus eget. Pellentesque tempus scelerisque iaculis. Nullam interdum ultricies nibh quis sollicitudin. Donec ornare fermentum facilisis. Ut at sem ac sem imperdiet varius a eget tortor. Nam eu augue eget orci semper maximus in eget augue. Mauris ornare, nisl ut suscipit consectetur, mi quam interdum tellus, at rutrum quam eros ultrices mi.
+Linear Regression is the most simplest task that a data scientist do, everyday. Actually it gives the solution to most of the problems and if not then some advanced form of this concept will definitely satisfy you 👍. 
 
-# Headers
+# Finally Maths
 {% highlight markdown %}
-# H1
-## H2
-### H3
-#### H4
-##### H5
-###### H6
+Math
 {% endhighlight %}
 
 # H1
@@ -34,6 +29,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt orna
 - Abbreviation: <abbr title="HyperText Markup Language">HTML</abbr>
 - Citation: <cite>&mdash; Chester How</cite>
 {% endhighlight %}
+
 
 - **Bold**
 - _Italics_
