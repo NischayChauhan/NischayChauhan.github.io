@@ -16,40 +16,36 @@ The goal of linear regression is to find a relationship between y -> x. Such tha
 ###Least Square Method 
 Consider a set of points marked on x - axis and y - axis.
 
-Let,there be a point (x<sub>i</sub>,y<sub>i</sub>). The goal is to find a line y = (a*x) + b. Where the (Y_{predicted} - Y_{actuall}) ~ 0.
+Let,there be a point (x<sub>i</sub>,y<sub>i</sub>). The goal is to find a line y = (a*x) + b. Where the (Y<sub>predicted</sub> - Y<sub>actuall</sub>) ~ 0.
 
-For this what we do is that we take a error E, where E = |Y_{predicted}-Y_{true}|, or  E = (Y_{predicted}-Y_{true})^{2}.
+For this what we do is that we take a error E, where E = |Y<sub>predicted</sub> - Y<sub>actuall</sub>|, or  E = (Y<sub>predicted</sub> - Y<sub>actuall</sub>)<sup>2</sup>.
+
 The motive is to take the magnitude of error without considering the sign.
 
-Then just \sum {(Y_{predicted}-Y_{true})^{2}}, to get mean squared error. Now based on this error we update our parameters.
+Then just ![sigma](https://latex.codecogs.com/gif.latex?%5Csum%20%7B%28Y_%7Bpredicted%7D-Y_%7Btrue%7D%29%5E%7B2%7D%7D), to get mean squared error. Now based on this error we update our parameters.
 
 Thats what we do in everyday life pretty much.
-{% highlight markdown %}
 * See how bad your output is.
 * Try to make it less bad.
 * Repeat
-{% endhighlight %}
 
 ## Math
 The question remains, how should we update the parameters. We know that it has something to do with the error we got but what exactly is it.
 
-{% highlight markdown %}
-The Equation/Hypothesis: h_{\theta} = B_{0} + (B_{1}*x).
+The Equation/Hypothesis: ![eq1](https://latex.codecogs.com/gif.latex?h_%7B%5Ctheta%7D%20%3D%20B_%7B0%7D%20&plus;%20%28B_%7B1%7D*x%29).
 
-The Error/Cost function: J_{\theta} = \sum{ Y_{predicited} - Y_{true}}.
+The Error/Cost function: ![eq2](https://latex.codecogs.com/gif.latex?J_%7B%5Ctheta%7D%20%3D%20%5Csum%7B%20Y_%7Bpredicited%7D%20-%20Y_%7Btrue%7D%7D).
 
 Now, here is the trick the parameters will updated as :-	
-	\theta_{j} = \theta_{j} - (\alpha*(\frac{\partial (J_{\theta})}{\partial \theta_{j}})).
+	![eq3](https://latex.codecogs.com/gif.latex?%5Ctheta_%7Bj%7D%20%3D%20%5Ctheta_%7Bj%7D%20-%20%5Calpha*%5Cfrac%7B%5Cpartial%20J_%7B%5Ctheta%7D%7D%7B%5Cpartial%20%5Ctheta_%7Bj%7D%7D).
 
 On solving we will get, 
-	\theta_{j} = \theta_{j} - \alpha * (h(x^{i})-y) * x_{j}^{i}.
-
-{% endhighlight %}
+	![eq4](https://latex.codecogs.com/gif.latex?%5Ctheta_%7Bj%7D%20%3D%20%5Ctheta_%7Bj%7D%20-%20%5Calpha%20*%20%28h%28x%5E%7Bi%7D%29-y%29%20*%20x_%7Bj%7D%5E%7Bi%7D).
 
 
 # What it might look like
 ![Image with caption](../images/bolg_1/1.png "Image with caption")
-_How linear regression with gradient descent algo would find a best fit_
+_How it would find a best fit_
 
 # Hello Python
 
@@ -61,20 +57,14 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
-{% highlight js  linenos %}
-{% endhighlight %}
 //Some random data
 x = np.array([1,2,3,4,5,6,7,8,9,10])
 y = np.array([4,3,5,9,10,16,12,15,19,20])
 
-{% highlight js  linenos %}
-{% endhighlight %}
 //Initiallizing theta
 theta0 = 0.0
 theta1 = 0.0
 
-{% highlight js  linenos %}
-{% endhighlight %}
 //Utility functions
 def h(theta0,theta1,x,i):
     return theta0 + (theta1*x[i])
@@ -115,9 +105,6 @@ def startDescent(theta0,theta1,x,y):
         else:
             theta0,theta1 = updateParam(theta0,theta1,x,y,alpha)
 
-{% highlight js  linenos %}
-{% endhighlight %}
-
 print "Starting Value For Theta0: ",theta0
 print "Starting Value For Theat1: ",theta1
 print "Final values are: ",startDescent(theta0,theta1,x,y)
@@ -126,4 +113,4 @@ print "Final values are: ",startDescent(theta0,theta1,x,y)
 
 ###GoodBye
 > Work untill your could, would, should become did.
-<hr>
+
