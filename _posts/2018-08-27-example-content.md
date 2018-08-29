@@ -13,7 +13,7 @@ Linear models are parametric, meaning the have small number of numeric parameter
 # Linear Regression
 The goal of linear regression is to find a relationship between y -> x. Such that y = f(x).
 
-###Least Square Method 
+### Least Square Method 
 Consider a set of points marked on x - axis and y - axis.
 
 Let,there be a point (x<sub>i</sub>,y<sub>i</sub>). The goal is to find a line y = (a*x) + b. Where the (Y<sub>predicted</sub> - Y<sub>actuall</sub>) ~ 0.
@@ -50,9 +50,6 @@ On solving we will get,
 _How it would find a best fit_
 
 # Hello Python
-
-Use back-ticks for `inline code`. Multi-line code snippets are supported too through Pygments.
-
 {% highlight js  linenos %}
 // importing libraries
 import numpy as np
